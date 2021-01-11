@@ -11,6 +11,24 @@ quizButton.addEventListener('click', () => {
     const firstName = prompt('Please enter first name');
     const lastName = prompt('Please enter last name');
 
+    const answerOne = prompt('Is the raccoon the largest species of the procyonid family?');
+    if (answerOne.charAt(0).toUpperCase() === 'Y') {
+        console.log('you got it!');
+    } else {
+        console.log('failed');
+    }
+    let correctAnswers = 0;
+    ++correctAnswers;
+    console.log(correctAnswers);
+
+    const answerTwo = prompt('Was the word raccoon originally adapted from a German term?');
+    if (answerTwo.charAt(0).toUpperCase() !== 'Y') {
+        console.log('you got it!');
+    } else {
+        console.log('failed');
+    }
+    ++correctAnswers;
+    console.log(correctAnswers);
 
 
 });
