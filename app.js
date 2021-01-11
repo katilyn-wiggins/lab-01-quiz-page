@@ -1,15 +1,18 @@
-import { countsAsAYes } from './counts-as-a-yes';
-
 // import functions and grab DOM elements
+import { countsAsAYes } from './counts-as-a-yes.js';
+
+// initialize state
 const quizButton = document.getElementById('quiz-button');
 const answerDiv = document.getElementById('hidden-div');
-// initialize state
+
+// set event listeners to update state and DOM
 quizButton.addEventListener('click', () => {
     alert('Would you like to take a quiz about raccoons?');
     const takeQuiz = confirm('Are you suuuuure?');
     if (takeQuiz === false) {
         return;
     }
+
     const firstName = prompt('Please enter first name');
     const lastName = prompt('Please enter last name');
 
@@ -29,7 +32,4 @@ quizButton.addEventListener('click', () => {
     const finishedQuizResults = `Wow, ${firstName} ${lastName}, you scored ${correctAnswers} out of 3! `;
     answerDiv.textContent = finishedQuizResults;
 
-
-
 });
-// set event listeners to update state and DOM
