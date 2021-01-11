@@ -8,9 +8,8 @@ quizButton.addEventListener('click', () => {
     if (takeQuiz === false) {
         return;
     }
-
-
-
+    const firstName = prompt('Please enter first name');
+    const lastName = prompt('Please enter last name');
 
 
 
