@@ -5,12 +5,15 @@
 --pewter-blue: #9db4c0ff;
 --cadet: #5c6b73ff;
 --gunmetal: #253237ff;
+--light-cyan-2: #d1edf0ff;
+
 }
 
 
 body {
     font-family: 'Fredoka One', sans-serif;
     background-color: var(gunmetal);
+    
 }
 
 main {
@@ -19,12 +22,13 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
 }
 
 
 header {
     text-align: center;
-    background-color: var(--pewter-blue);
+    background-color: var(--light-cyan-2);
     padding-bottom: 5px;
     
 }
@@ -33,12 +37,7 @@ h1 {
     font-size: 3em;
 }
 
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(cadet);
-    box-shadow: var(--shadow);
-}
+
 
 
 h2 {
@@ -61,8 +60,8 @@ footer {
     bottom: 0;
     height: var(--footer-height);
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--pewter-blue);
+    justify-content: center;
+    background-color: var(--light-cyan-2);
     box-shadow: var(--shadow);
 }
   
@@ -78,7 +77,7 @@ h3 {
     background-color: var(--powder-blue);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     padding-top: 15px;
@@ -97,7 +96,7 @@ button {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--cadet);
+    background-color: var(--powder-blue);
 }
 
 .basics {
@@ -106,7 +105,7 @@ button {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+    text-align: center;
 
 }
 
@@ -119,38 +118,27 @@ button {
     width: 100%;
     background-color: var(--light-cyan);
   
-
 }
 
 .family {
-    background-color: var(--cadet);
+    background-color: var(--pewter-blue);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     
-
-    
-
-
 }
 
 .species {
     background-color: var(--light-cyan);
-    display: list-item;
-    font-size: larger;
-    text-align: center;
-    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.olist1 {
-    display: list-item;
-}
     
-    
-    
-
-}
 
 .origin {
     background-color: white;
@@ -158,18 +146,18 @@ button {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
  
 
 }
 
 .language {
-   background-color: var(--pewter-blue);
-   display: flex;
+    background-color: var(--pewter-blue);
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-  
-    
+    text-align: center;
 
 }
 
@@ -179,9 +167,6 @@ button {
     
 }
 
-ol {
-    display: list-item;
-    list-style-position: inside
-}
+
 
 
