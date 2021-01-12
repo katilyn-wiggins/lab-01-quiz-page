@@ -24,7 +24,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px; 
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     
 }
 
@@ -88,10 +88,12 @@ h3 {
 }
 
 button {
-    width: 100px;
-    height: 50px; 
+    width: 150px;
+    height: 100px; 
     border-radius: 50px;
     margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
 }
 
 .factors {
@@ -120,7 +122,6 @@ button {
     justify-content: center;
     width: 100%;
     background-color: var(--light-cyan);
-  
 }
 
 .family {
@@ -150,7 +151,6 @@ button {
     flex-direction: column;
     justify-content: center;
     text-align: center;
- 
 
 }
 
@@ -170,6 +170,15 @@ button {
     
 }
 
+#hidden-div {
+    overflow-wrap: normal;
+}
 
+.green {
+    color: green;
+}
 
+.pink {
+    color: pink;
+}
 
