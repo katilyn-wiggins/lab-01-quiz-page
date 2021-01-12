@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { countsAsAYes } from './counts-as-a-yes.js';
-import { quizScore } from './utils.js';
+import { quizScore, resultsAsPercentage } from './utils.js';
 
 // initialize state
 const quizButton = document.getElementById('quiz-button');
@@ -30,7 +30,7 @@ quizButton.addEventListener('click', () => {
     const answerThree = prompt('Are raccoon babies called Kits?');
     if (countsAsAYes(answerThree)) ++correctAnswers;
 
-    const finishedQuizResults = `Wow, ${firstName} ${lastName}, you scored ${correctAnswers} out of 3! `;
+    const finishedQuizResults = `Wow, ${firstName} ${lastName}, you scored ${resultsAsPercentage(correctAnswers)}! `;
     answerDiv.textContent = finishedQuizResults + quizScore(correctAnswers);
 
 
