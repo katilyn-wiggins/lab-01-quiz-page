@@ -10,9 +10,11 @@
 }
 
 
+
 body {
     font-family: 'Fredoka One', sans-serif;
     background-color: var(gunmetal);
+    height: 100%;
     
 }
 
@@ -20,9 +22,8 @@ main {
     /* display: flex;
     flex-direction: ; */
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
 }
 
 
@@ -55,12 +56,12 @@ p {
 }
   
 footer {
-    position: fixed;
+    position: relative;
+    text-align: center;
+    font-size: small;
+    height: 2em;
     width: 100%;
     bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: center;
     background-color: var(--light-cyan-2);
     box-shadow: var(--shadow);
 }
