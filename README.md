@@ -2,11 +2,10 @@
 
 Outcomes: 
 - There should be an alert 
-- There should be a confirm so the user can opt out 
-- There should be a first name prompt
-- There should be a last name prompt 
-- There should be three question prompts
-- The user should be able to see their results after taking the quiz 
+- Confirm button
+- Should ask for first and last name
+- Three question prompts
+- Results should display after the quiz
 
 HTML Setup: 
 -Some information presented nicely with an image and some list names 
@@ -21,11 +20,10 @@ HTML Setup:
     - secret div 
 2) Add event listeners
     - button 
-3) Respond to user input -- in most apps, the real work happens in the cool zone
-    - launch an alert 
-    - launch a confirmation 
-        - if the user says no, nothing else happens ('return' nothing to break out of the event listener/cool zone)
-        if the user says yes, launch the series of prompts 
+3) Respond to user input
+    - alert 
+    - confirmation 
+        - if the user says no, nothing else happens
     - launch a first name prompt 
         - store that output to display later 
     - launch a last name prompt 

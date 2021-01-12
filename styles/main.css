@@ -1,48 +1,42 @@
+/* CSS HEX */
+:root {
+--light-cyan: #e0fbfcff;
+--powder-blue: #c2dfe3ff;
+--pewter-blue: #9db4c0ff;
+--cadet: #5c6b73ff;
+--gunmetal: #253237ff;
+}
+
 
 body {
---header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Fredoka One', sans-serif;
+    background-color: var(gunmetal);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    /* display: flex;
+    flex-direction: ; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-section {
-    background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
-}
 
 header {
     text-align: center;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+    background-color: var(--pewter-blue);
+    padding-bottom: 5px;
+    
+}
+
+h1 {
+    font-size: 3em;
 }
 
 footer {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(cadet);
     box-shadow: var(--shadow);
 }
 
@@ -51,19 +45,6 @@ h2 {
     font-size: 1.8rem;
     font-weight: bold;
 }
-
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
-}
-
 
 
 content {
@@ -81,7 +62,126 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--pewter-blue);
     box-shadow: var(--shadow);
 }
   
+
+h3 {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.quiz-area {
+    background-color: var(--powder-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+    
+}
+
+button {
+    width: 100px;
+    height: 50px; 
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.factors {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cadet);
+}
+
+.basics {
+    background-color: var(--powder-blue);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.image {
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--light-cyan);
+  
+
+}
+
+.family {
+    background-color: var(--cadet);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    
+
+
+}
+
+.species {
+    background-color: var(--light-cyan);
+    display: list-item;
+    font-size: larger;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.olist1 {
+    display: list-item;
+}
+    
+    
+    
+
+}
+
+.origin {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ 
+
+}
+
+.language {
+   background-color: var(--pewter-blue);
+   display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  
+    
+
+}
+
+.list1 {
+    list-style-type: square;
+    margin-top: 5px; 
+    
+}
+
+ol {
+    display: list-item;
+    list-style-position: inside
+}
+
+
