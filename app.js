@@ -5,6 +5,7 @@ import { quizScore, resultsAsPercentage } from './utils.js';
 // initialize state
 const quizButton = document.getElementById('quiz-button');
 const answerDiv = document.getElementById('hidden-div');
+// const colorChange = document.getElementById('color-change');
 
 // set event listeners to update state and DOM
 quizButton.addEventListener('click', () => {
@@ -33,6 +34,16 @@ quizButton.addEventListener('click', () => {
     const finishedQuizResults = `Wow, ${firstName} ${lastName}, you scored ${resultsAsPercentage(correctAnswers)}! `;
     answerDiv.textContent = finishedQuizResults + quizScore(correctAnswers);
 
+
+    // color change function process
+    // function colorChange(correctAnswers) {
+    //     if (correctAnswers === 2) {
+    //         colorChange.classList.contains('pink');
+    //     }
+    //     if (correctAnswers === 3) {
+    //         colorChange.classList.contains('green');
+    //     }
+    // }
 
 
 });

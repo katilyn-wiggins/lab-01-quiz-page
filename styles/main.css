@@ -38,6 +38,7 @@ header {
 
 h1 {
     font-size: 3em;
+
 }
 
 
@@ -46,15 +47,18 @@ h1 {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+
 }
 
 
 content {
     width: 80%;
+
 }
 
 p {
     margin: var(--gutter);
+
 }
   
 footer {
@@ -66,6 +70,7 @@ footer {
     bottom: 0;
     background-color: var(--light-cyan-2);
     box-shadow: var(--shadow);
+
 }
   
 
@@ -74,6 +79,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-self: center;
+
 }
 
 .quiz-area {
@@ -94,6 +100,7 @@ button {
     margin-top: 20px;
     font-size: large;
     font-weight: bold;
+
 }
 
 .factors {
@@ -102,6 +109,7 @@ button {
     flex-direction: column;
     justify-content: center;
     background-color: var(--powder-blue);
+
 }
 
 .basics {
@@ -122,6 +130,7 @@ button {
     justify-content: center;
     width: 100%;
     background-color: var(--light-cyan);
+
 }
 
 .family {
@@ -140,6 +149,7 @@ button {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
 }
 
     
@@ -172,13 +182,21 @@ button {
 
 #hidden-div {
     overflow-wrap: normal;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .green {
     color: green;
+
 }
 
 .pink {
     color: pink;
+    
 }
 
