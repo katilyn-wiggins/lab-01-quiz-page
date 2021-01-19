@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { countsAsAYes } from './counts-as-a-yes.js';
-import { quizScore, resultsAsPercentage, colorChange } from './utils.js';
+import { quizScore, resultsAsPercentage } from './utils.js';
 
 // initialize state
 const quizButton = document.getElementById('quiz-button');
