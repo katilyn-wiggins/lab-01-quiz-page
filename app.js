@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { countsAsAYes } from './counts-as-a-yes.js';
-import { quizScore, resultsAsPercentage } from './utils.js';
+import { quizScore, resultsAsPercentage, colorChange } from './utils.js';
 
 // initialize state
 const quizButton = document.getElementById('quiz-button');
@@ -32,18 +32,26 @@ quizButton.addEventListener('click', () => {
     if (countsAsAYes(answerThree)) ++correctAnswers;
 
     const finishedQuizResults = `Wow, ${firstName} ${lastName}, you scored ${resultsAsPercentage(correctAnswers)}! `;
-    answerDiv.textContent = finishedQuizResults + quizScore(correctAnswers);
+    answerDiv.textContent = finishedQuizResults + quizScore(colorChange(correctAnswers));
 
 
     // color change function process
-    // function colorChange(correctAnswers) {
-    //     if (correctAnswers === 2) {
-    //         colorChange.classList.contains('pink');
-    //     }
-    //     if (correctAnswers === 3) {
-    //         colorChange.classList.contains('green');
-    //     }
-    // }
+    function colorChange(correctAnswers) {
+        if (correctAnswers === 1) {
+            answerDiv.style.backgroundColor = 'pink';
+        }
+        if (correctAnswers === 2) {
+            answerDiv.style.backgroundColor = 'green';
+        }
+        if (correctAnswers === 1) {
+            answerDiv.style.backgroundColor = 'blue';
+        }
+        if (correctAnswers === 0) {
+            answerDiv.style.backgroundColor = 'yellow';
+        }
+    }
+
+
 
 
 });

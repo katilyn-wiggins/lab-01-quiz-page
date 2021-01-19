@@ -9,3 +9,5 @@ export function quizScore(num) {
 export function resultsAsPercentage(results) {
     return ((results / 3) * 100).toFixed(0) + '%';
 }
+
+
